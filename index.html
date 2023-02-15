@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="./styles.css" />
+
+    <script>
+      console.log(new Date());
+      //   alert(new Date());
+
+      function thumbsUp() {
+        document.getElementById("myImg").src = "./assets/imgs/thumbs-up.png";
+      }
+      function thumbsDown() {
+        document.getElementById("myImg").src = "./assets/imgs/thumbsdown.png";
+      }
+      function navigateToNextPage() {
+        localStorage.setItem("id", "Zak Doe");
+        window.location.href = "./home.html";
+      }
+    </script>
+  </head>
+
+  <body>
+    <p>hello world</p>
+    <div class="mainContainer">
+      <img src="./assets/imgs/thumbs-up.png" id="myImg" alt="" />
+
+      <div>
+        <button style="background-color: green" onclick="thumbsUp()">
+          Thumbs Up
+        </button>
+        <button
+          style="background-color: black; color: white"
+          onclick="navigateToNextPage()"
+        >
+          Go to Next Page
+        </button>
+        <button style="background-color: red" onclick="thumbsDown()">
+          Thumbs Down
+        </button>
+      </div>
+    </div>
+  </body>
+
+  <footer></footer>
+</html>

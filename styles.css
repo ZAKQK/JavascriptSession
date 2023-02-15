@@ -1,0 +1,18 @@
+.mainContainer {
+    /* background: blue; */
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+button {
+    font-size: large;
+    padding: 8px;
+    margin: 50px 16px 16px 16px;
+    border-radius: 8px;
+}
+footer {
+    min-height: 200px;
+    background: red;
+}
